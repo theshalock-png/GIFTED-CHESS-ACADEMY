@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn – ChessMaster</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+</head>
+<body class="learn-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">♛</span><span class="logo-text">ChessMaster</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="play.html" class="nav-link">Play</a></li>
+        <li><a href="learn.html" class="nav-link active">Learn</a></li>
+        <li><a href="puzzles.html" class="nav-link">Puzzles</a></li>
+        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="play.html" class="nav-cta">Play Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="page-tag">📖 Lessons & Theory</span>
+      <h1>Learn Chess, Step by Step</h1>
+      <p>From the rules of the game to advanced grandmaster strategy — structured lessons for every level.</p>
+    </div>
+  </section>
+
+  <!-- LEARN CONTENT -->
+  <main class="page-content">
+    <div class="learn-layout">
+
+      <!-- Sidebar -->
+      <aside class="learn-sidebar">
+        <div class="sidebar-heading">Categories</div>
+        <div class="sidebar-link active"><span class="sidebar-icon">🎯</span> All Lessons <span class="sidebar-badge">30</span></div>
+        <div class="sidebar-link"><span class="sidebar-icon">👶</span> Beginner <span class="sidebar-badge">10</span></div>
+        <div class="sidebar-link"><span class="sidebar-icon">⚔</span> Tactics <span class="sidebar-badge">8</span></div>
+        <div class="sidebar-link"><span class="sidebar-icon">📐</span> Strategy <span class="sidebar-badge">6</span></div>
+        <div class="sidebar-link"><span class="sidebar-icon">♟</span> Openings <span class="sidebar-badge">4</span></div>
+        <div class="sidebar-link"><span class="sidebar-icon">🏁</span> Endgames <span class="sidebar-badge">2</span></div>
+        <div class="sidebar-heading" style="margin-top:8px;">Progress</div>
+        <div style="padding:16px 18px;">
+          <div style="display:flex; justify-content:space-between; font-size:0.83rem; color:var(--muted); margin-bottom:8px;">
+            <span>Completed</span><span style="color:var(--text); font-weight:600;">7 / 30</span>
+          </div>
+          <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:23%;"></div></div>
+        </div>
+      </aside>
+
+      <!-- Lesson grid -->
+      <div>
+        <h2 style="font-size:1.4rem; font-weight:800; margin-bottom:24px;">All Lessons</h2>
+        <div class="lesson-grid">
+
+          <div class="lesson-card">
+            <div class="lesson-thumb">♟</div>
+            <div class="lesson-body">
+              <h3>How the Pieces Move</h3>
+              <p>Learn how every piece moves, attacks, and cooperates on the board.</p>
+              <div class="lesson-meta">
+                <span class="lesson-tag tag-beginner">Beginner</span>
+                <span class="lesson-duration">15 min</span>
+              </div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:100%;"></div></div>
+            </div>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-thumb">🏰</div>
+            <div class="lesson-body">
+              <h3>Castling & Special Moves</h3>
+              <p>En passant, promotion, and castling explained clearly with examples.</p>
+              <div class="lesson-meta">
+                <span class="lesson-tag tag-beginner">Beginner</span>
+                <span class="lesson-duration">12 min</span>
+              </div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:100%;"></div></div>
+            </div>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-thumb">⚔</div>
+            <div class="lesson-body">
+              <h3>Basic Tactics: Forks & Pins</h3>
+              <p>Discover the most common tactical patterns that win material.</p>
+              <div class="lesson-meta">
+                <span class="lesson-tag tag-beginner">Beginner</span>
+                <span class="lesson-duration">20 min</span>
+              </div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:60%;"></div></div>
+            </div>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-thumb">♖</div>
+            <div class="lesson-body">
+              <h3>Rook Endgames</h3>
+              <p>King and rook vs king — the cornerstone of endgame technique.</p>
+              <div class="lesson-meta">
+                <span class="lesson-tag tag-intermediate">Intermediate</span>
+                <span class="lesson-duration">25 min</span>
+              </div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:30%;"></div></div>
+            </div>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-thumb">🎩</div>
+            <div class="lesson-body">
+              <h3>The Sicilian Defence</h3>
+              <p>One of the sharpest responses to 1.e4. Learn the main lines.</p>
+              <div class="lesson-meta">
+                <span class="lesson-tag tag-intermediate">Intermediate</span>
+                <span class="lesson-duration">30 min</span>
+              </div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:0%;"></div></div>
+            </div>
+          </div>
+
+          <div class="lesson-card">
+            <div class="lesson-thumb">♗</div>
+            <div class="lesson-body">
+              <h3>Bishop Pair Advantage</h3>
+              <p>When and how to exploit the long-range power of two bishops.</p>
+              <div class="lesson-meta">
+                <span class="lesson-tag tag-advanced">Advanced</span>
+                <span class="lesson-duration">35 min</span>
+              </div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:0%;"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="logo-icon">♛</span><span class="logo-text">ChessMaster</span></div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a><a href="play.html">Play</a>
+        <a href="learn.html">Learn</a><a href="puzzles.html">Puzzles</a>
+        <a href="leaderboard.html">Leaderboard</a><a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">© 2026 ChessMaster. Built with ♛ and a love for the game.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

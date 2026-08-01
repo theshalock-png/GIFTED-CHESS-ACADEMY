@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Gifted Chess Academy</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+</head>
+<body class="gallery-page">
+
+  <!-- ░░░ NAVBAR ░░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">♛</span>
+        <span class="logo-text">GIFTED<span class="logo-thin"> CHESS ACADEMY</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="coaching.html" class="nav-link">Programs</a></li>
+        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="coaching.html" class="nav-cta">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ░░░ PAGE HERO ░░░ -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="page-tag">📸 Real Sessions, Real Results</span>
+      <h1>Training Gallery</h1>
+      <p>A window into what coaching looks like — in schools, clubs, tournaments, and online. Every photo is a real session with real students.</p>
+    </div>
+  </section>
+
+  <!-- ░░░ GALLERY CONTENT ░░░ -->
+  <main class="page-content">
+
+    <!-- Trust bar -->
+    <div class="gallery-trust-bar">
+      <div class="trust-item"><span class="trust-num">500+</span><span class="trust-label">Students Trained</span></div>
+      <div class="trust-div"></div>
+      <div class="trust-item"><span class="trust-num">5+</span><span class="trust-label">School Partnerships</span></div>
+      <div class="trust-div"></div>
+      <div class="trust-item"><span class="trust-num">10+</span><span class="trust-label">Years Coaching</span></div>
+      <div class="trust-div"></div>
+      <div class="trust-item"><span class="trust-num">Online</span><span class="trust-label">&amp; In-Person</span></div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="gf-btn active" data-filter="all">All Photos</button>
+      <button class="gf-btn" data-filter="school">Schools</button>
+      <button class="gf-btn" data-filter="group">Group Classes</button>
+      <button class="gf-btn" data-filter="tournament">Tournaments</button>
+      <button class="gf-btn" data-filter="online">Online Sessions</button>
+      <button class="gf-btn" data-filter="1on1">1-on-1</button>
+    </div>
+
+    <!-- Gallery grid -->
+    <!-- To add a photo: drop the file in images/training/, set src, caption, and data-category -->
+    <div class="pro-gallery" id="proGallery">
+
+      <div class="pg-item pg-item--tall" data-category="school" data-caption="Primary School Chess Club — Weekly After-School Session" data-index="0">
+        <img src="../images/training/session-01.jpg" alt="Primary School Chess Club"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">🏫 School</span>
+            <p class="pg-caption">Primary School Chess Club</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-01.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="group" data-caption="Saturday Group Class — Beginners Learning the Basics" data-index="1">
+        <img src="../images/training/session-02.jpg" alt="Saturday Group Class"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">👥 Group</span>
+            <p class="pg-caption">Saturday Group Class</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-02.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="tournament" data-caption="Regional Junior Tournament — Students Representing Their School" data-index="2">
+        <img src="../images/training/session-03.jpg" alt="Regional Junior Tournament"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">🏆 Tournament</span>
+            <p class="pg-caption">Regional Junior Tournament</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-03.jpg</p></div>
+      </div>
+
+      <div class="pg-item pg-item--wide" data-category="school" data-caption="High School Chess Club — Competitive Training Programme" data-index="3">
+        <img src="../images/training/session-04.jpg" alt="High School Chess Club"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">🏫 School</span>
+            <p class="pg-caption">High School Competitive Programme</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-04.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="1on1" data-caption="One-on-One Session — Deep Tactical Analysis" data-index="4">
+        <img src="../images/training/session-05.jpg" alt="One-on-One Session"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">♟ 1-on-1</span>
+            <p class="pg-caption">Deep Tactical Analysis</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-05.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="online" data-caption="Online Session via Zoom — Interactive Board Analysis" data-index="5">
+        <img src="../images/training/session-06.jpg" alt="Online Coaching Session"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">💻 Online</span>
+            <p class="pg-caption">Online Session — Board Analysis</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-06.jpg</p></div>
+      </div>
+
+      <div class="pg-item pg-item--tall" data-category="tournament" data-caption="Prize Giving Ceremony — Students Celebrating Their Wins" data-index="6">
+        <img src="../images/training/session-07.jpg" alt="Prize Giving Ceremony"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">🏆 Tournament</span>
+            <p class="pg-caption">Prize Giving Ceremony</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-07.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="group" data-caption="Adult Evening Class — Openings &amp; Strategy Workshop" data-index="7">
+        <img src="../images/training/session-08.jpg" alt="Adult Evening Class"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">👥 Group</span>
+            <p class="pg-caption">Adult Openings Workshop</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-08.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="school" data-caption="Community Centre Chess Club — Kids &amp; Teens Together" data-index="8">
+        <img src="../images/training/session-09.jpg" alt="Community Centre Chess Club"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">🏫 School</span>
+            <p class="pg-caption">Community Centre Chess Club</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-09.jpg</p></div>
+      </div>
+
+      <div class="pg-item pg-item--wide" data-category="tournament" data-caption="Inter-School Championship — Coached Teams Competing" data-index="9">
+        <img src="../images/training/session-10.jpg" alt="Inter-School Championship"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">🏆 Tournament</span>
+            <p class="pg-caption">Inter-School Championship</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-10.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="1on1" data-caption="Endgame Masterclass — Private Student Session" data-index="10">
+        <img src="../images/training/session-11.jpg" alt="Endgame Masterclass"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">♟ 1-on-1</span>
+            <p class="pg-caption">Endgame Masterclass</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-11.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="online" data-caption="Online Group Workshop — Tactics Puzzles &amp; Pattern Recognition" data-index="11">
+        <img src="../images/training/session-12.jpg" alt="Online Group Workshop"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">💻 Online</span>
+            <p class="pg-caption">Online Tactics Workshop</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-12.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="group" data-caption="Kids Beginner Class — Learning to Love the Game" data-index="12">
+        <img src="../images/training/session-13.jpg" alt="Kids Beginner Class"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">👥 Group</span>
+            <p class="pg-caption">Kids Beginner Class</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-13.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="school" data-caption="Primary School Visit — Introduction to Chess Programme" data-index="13">
+        <img src="../images/training/session-14.jpg" alt="Primary School Visit"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">🏫 School</span>
+            <p class="pg-caption">Primary School Intro Programme</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-14.jpg</p></div>
+      </div>
+
+      <div class="pg-item" data-category="1on1" data-caption="Opening Preparation — Custom Repertoire Building" data-index="14">
+        <img src="../images/training/session-15.jpg" alt="Opening Preparation Session"
+             onerror="this.closest('.pg-item').classList.add('pg-empty')" />
+        <div class="pg-overlay">
+          <div class="pg-overlay-inner">
+            <span class="pg-tag">♟ 1-on-1</span>
+            <p class="pg-caption">Opening Repertoire Building</p>
+            <span class="pg-zoom">&#x26F6; View</span>
+          </div>
+        </div>
+        <div class="pg-placeholder"><span>📷</span><p>session-15.jpg</p></div>
+      </div>
+
+    </div><!-- /pro-gallery -->
+
+    <!-- CTA below gallery -->
+    <div class="gallery-cta">
+      <div class="gallery-cta-inner">
+        <div>
+          <h3>Want to be part of the next session?</h3>
+          <p>Book your first coaching session today — a free 20-minute consultation is included.</p>
+        </div>
+        <div class="gallery-cta-btns">
+          <a href="coaching.html" class="btn btn-primary">Book a Session</a>
+          <a href="contact.html" class="btn btn-secondary">Ask a Question</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ░░░ LIGHTBOX ░░░ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-prev"  id="lbPrev"  aria-label="Previous photo">&#8592;</button>
+    <button class="lb-next"  id="lbNext"  aria-label="Next photo">&#8594;</button>
+    <div class="lb-content">
+      <img class="lb-img" id="lbImg" src="" alt="" />
+      <div class="lb-meta">
+        <span class="lb-tag" id="lbTag"></span>
+        <p class="lb-caption" id="lbCaption"></p>
+        <span class="lb-counter" id="lbCounter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="logo-icon">♛</span><span class="logo-text">ChessMaster Coach</span></div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 ChessMaster Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play – ChessMaster</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+</head>
+<body class="play-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">♛</span>
+        <span class="logo-text">ChessMaster</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="play.html" class="nav-link active">Play</a></li>
+        <li><a href="learn.html" class="nav-link">Learn</a></li>
+        <li><a href="puzzles.html" class="nav-link">Puzzles</a></li>
+        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="play.html" class="nav-cta">Play Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="page-tag">♟ Online Play</span>
+      <h1>Choose Your Battle</h1>
+      <p>Select a time control, find an opponent, and prove your skill on the 64 squares.</p>
+    </div>
+  </section>
+
+  <!-- PLAY CONTENT -->
+  <main class="page-content">
+
+    <!-- Mode selection -->
+    <h2 class="section-title" style="text-align:left; margin-bottom:8px;">Time Controls</h2>
+    <p style="color:var(--muted); margin-bottom:32px;">Pick your preferred pace of play.</p>
+    <div class="mode-grid">
+      <div class="mode-card active">
+        <span class="mode-emoji">⚡</span>
+        <span class="time-label">1 min</span>
+        <h3>Bullet</h3>
+        <p>One-minute madness for the bravest players.</p>
+      </div>
+      <div class="mode-card">
+        <span class="mode-emoji">🔥</span>
+        <span class="time-label">3 min</span>
+        <h3>Blitz</h3>
+        <p>Fast-paced and furious. The most popular format.</p>
+      </div>
+      <div class="mode-card">
+        <span class="mode-emoji">⏱</span>
+        <span class="time-label">10 min</span>
+        <h3>Rapid</h3>
+        <p>Time to think, plan, and execute your strategy.</p>
+      </div>
+      <div class="mode-card">
+        <span class="mode-emoji">♟</span>
+        <span class="time-label">30 min</span>
+        <h3>Classical</h3>
+        <p>Deep analysis and long games for the purist.</p>
+      </div>
+    </div>
+
+    <!-- Game arena -->
+    <div class="play-arena">
+      <div class="board-wrapper">
+        <!-- Opponent bar -->
+        <div class="player-bar">
+          <div class="player-avatar">OP</div>
+          <div>
+            <div class="player-name">Opponent</div>
+            <div style="font-size:0.78rem; color:var(--muted);">Rating: 1450</div>
+          </div>
+          <span class="clock">3:00</span>
+        </div>
+        <!-- Board -->
+        <div class="full-board" id="playBoard"></div>
+        <!-- Player bar -->
+        <div class="player-bar">
+          <div class="player-avatar">ME</div>
+          <div>
+            <div class="player-name">You</div>
+            <div style="font-size:0.78rem; color:var(--muted);">Rating: 1380</div>
+          </div>
+          <span class="clock">3:00</span>
+        </div>
+        <div class="game-controls">
+          <button class="btn btn-primary" style="flex:1;">Find Game</button>
+        </div>
+      </div>
+
+      <!-- Side panel -->
+      <div class="game-panel">
+        <div class="panel-card">
+          <h4>Move History</h4>
+          <div class="move-list">
+            <span class="move-num">1.</span><span class="move active">e4</span><span class="move">e5</span>
+            <span class="move-num">2.</span><span class="move">Nf3</span><span class="move">Nc6</span>
+            <span class="move-num">3.</span><span class="move">Bb5</span><span class="move">a6</span>
+            <span class="move-num">4.</span><span class="move">Ba4</span><span class="move">Nf6</span>
+            <span class="move-num">5.</span><span class="move">O-O</span><span class="move">Be7</span>
+          </div>
+        </div>
+        <div class="panel-card">
+          <h4>Captured Pieces</h4>
+          <div style="font-size:1.3rem; line-height:1.8; color:var(--muted);">
+            <div>♟♟ <span style="font-size:0.8rem;color:var(--muted);">+0.2</span></div>
+            <div>♙ <span style="font-size:0.8rem;color:var(--muted);">-0.2</span></div>
+          </div>
+        </div>
+        <div class="panel-card game-controls">
+          <h4>Game Actions</h4>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="ctrl-btn">⏮ First</button>
+            <button class="ctrl-btn">◀ Prev</button>
+            <button class="ctrl-btn">Next ▶</button>
+            <button class="ctrl-btn">Last ⏭</button>
+            <button class="ctrl-btn danger" style="flex:1 1 100%;">⚑ Resign</button>
+            <button class="ctrl-btn" style="flex:1 1 100%;">= Draw</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="logo-icon">♛</span><span class="logo-text">ChessMaster</span></div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a><a href="play.html">Play</a>
+        <a href="learn.html">Learn</a><a href="puzzles.html">Puzzles</a>
+        <a href="leaderboard.html">Leaderboard</a><a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">© 2026 ChessMaster. Built with ♛ and a love for the game.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gifted Chess Academy – Premier Chess Club & Training Center</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body class="home-page">
+
+  <!-- ░░░ NAVIGATION ░░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">♛</span>
+        <span class="logo-text">GIFTED<span class="logo-thin"> CHESS ACADEMY</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="pages/about.html" class="nav-link">About Us</a></li>
+        <li><a href="pages/coaching.html" class="nav-link">Programs</a></li>
+        <li><a href="pages/leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="pages/events.html" class="nav-link">Events</a></li>
+        <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="pages/shop.html" class="nav-link">Shop</a></li>
+        <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="pages/coaching.html" class="nav-cta">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ░░░ HERO ░░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="floating-pieces" id="floatingPieces">
+      <span class="piece piece-1">♔</span>
+      <span class="piece piece-2">♕</span>
+      <span class="piece piece-3">♖</span>
+      <span class="piece piece-4">♗</span>
+      <span class="piece piece-5">♘</span>
+      <span class="piece piece-6">♙</span>
+      <span class="piece piece-7">♚</span>
+      <span class="piece piece-8">♛</span>
+      <span class="piece piece-9">♜</span>
+      <span class="piece piece-10">♝</span>
+      <span class="piece piece-11">♞</span>
+      <span class="piece piece-12">♟</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">✦ Premier Chess Training Academy</div>
+      <h1 class="hero-title">
+        Master Chess With<br />
+        <span class="title-gradient">Gifted Chess Academy</span>
+      </h1>
+      <p class="hero-subtitle">
+        A thriving chess community for players of all ages and skill levels. 
+        Join our academy for world-class training, tournaments, and a vibrant chess culture.
+      </p>
+      <div class="hero-actions">
+        <a href="pages/coaching.html" class="btn btn-primary">Explore Programs</a>
+        <a href="pages/about.html" class="btn btn-secondary">About Our Academy</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Active Members</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Expert Coaches</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Tournaments Won</span></div>
+      </div>
+    </div>
+
+    <div class="hero-board-wrap">
+      <div class="hero-board" id="heroBoard"></div>
+      <div class="board-glow"></div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ░░░ SERVICES OVERVIEW ░░░ -->
+  <section class="features" id="services">
+    <div class="section-container">
+      <h2 class="section-title">What We Offer</h2>
+      <p class="section-sub">Everything you need to excel in chess — training, competition, and community.</p>
+      <div class="features-grid">
+        <a href="pages/coaching.html" class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Group Training</h3>
+          <p>Structured classes for all age groups and skill levels. Learn chess fundamentals and advanced strategies in a collaborative environment.</p>
+          <span class="feature-arrow">→</span>
+        </a>
+        <a href="pages/coaching.html#private" class="feature-card">
+          <div class="feature-icon">♟</div>
+          <h3>Private Coaching</h3>
+          <p>One-on-one sessions with our certified coaches. Personalized training plans designed to elevate your game.</p>
+          <span class="feature-arrow">→</span>
+        </a>
+        <a href="pages/leaderboard.html" class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>Tournaments & Events</h3>
+          <p>Regular internal tournaments, inter-club competitions, and preparation for national championships.</p>
+          <span class="feature-arrow">→</span>
+        </a>
+        <a href="pages/shop.html" class="feature-card">
+          <div class="feature-icon">🏪</div>
+          <h3>Academy Shop</h3>
+          <p>Official academy merchandise, chess sets, books, and training materials. Quality gear for serious players.</p>
+          <span class="feature-arrow">→</span>
+        </a>
+        <a href="pages/learn.html" class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Online Resources</h3>
+          <p>Access our library of lessons, puzzles, game analysis tools, and training videos exclusively for members.</p>
+          <span class="feature-arrow">→</span>
+        </a>
+        <a href="pages/about.html" class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Rating Tracking</h3>
+          <p>Monitor your progress with our comprehensive rating system. Watch your skills grow as you advance through our programs.</p>
+          <span class="feature-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ WHY CHOOSE US ░░░ -->
+  <section class="how-it-works" id="why">
+    <div class="section-container">
+      <h2 class="section-title">Why Join Gifted Chess Academy?</h2>
+      <p class="section-sub">A structured, community-driven approach to chess excellence.</p>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Expert Coaching</h3>
+          <p>Learn from certified FIDE trainers and national-level players with decades of combined experience.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Vibrant Community</h3>
+          <p>Connect with fellow chess enthusiasts, make friends, and grow together in a supportive environment.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Proven Results</h3>
+          <p>Our students consistently achieve top rankings in local and national tournaments year after year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ GALLERY TEASER ░░░ -->
+  <section class="gallery-teaser-section">
+    <div class="section-container">
+      <div class="gallery-teaser-header">
+        <div>
+          <h2 class="section-title" style="text-align:left; margin-bottom:8px;">Life at the Academy</h2>
+          <p style="color:var(--muted); font-size:1.05rem;">Training sessions, tournaments, community events, and unforgettable moments from our chess family.</p>
+        </div>
+        <a href="pages/gallery.html" class="btn btn-secondary">View Full Gallery →</a>
+      </div>
+      <div class="gallery-teaser-strip">
+        <div class="gts-item" data-src="../images/training/session-01.jpg">
+          <img src="images/training/session-01.jpg" alt="Group Training Session"
+               onerror="this.closest('.gts-item').classList.add('gts-empty')" />
+          <div class="gts-label">Group Training</div>
+          <div class="gts-empty-inner">📷</div>
+        </div>
+        <div class="gts-item gts-featured" data-src="../images/training/session-04.jpg">
+          <img src="images/training/session-04.jpg" alt="Academy Tournament"
+               onerror="this.closest('.gts-item').classList.add('gts-empty')" />
+          <div class="gts-label">Academy Tournament</div>
+          <div class="gts-empty-inner">📷</div>
+        </div>
+        <div class="gts-item" data-src="../images/training/session-07.jpg">
+          <img src="images/training/session-07.jpg" alt="Championship Winners"
+               onerror="this.closest('.gts-item').classList.add('gts-empty')" />
+          <div class="gts-label">Championship Winners</div>
+          <div class="gts-empty-inner">📷</div>
+        </div>
+        <div class="gts-item" data-src="../images/training/session-05.jpg">
+          <img src="images/training/session-05.jpg" alt="Junior Players"
+               onerror="this.closest('.gts-item').classList.add('gts-empty')" />
+          <div class="gts-label">Junior Program</div>
+          <div class="gts-empty-inner">📷</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ TESTIMONIALS ░░░ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-container">
+      <h2 class="section-title">What Our Members Say</h2>
+      <p class="section-sub">Real stories from our chess community.</p>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Joining Gifted Chess Academy was the best decision. My son went from knowing nothing to winning his first tournament in 6 months. The coaches are amazing!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SM</div>
+            <div><strong>Sarah Mitchell</strong><span class="testi-role">Parent — Junior Program</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The academy has an incredible atmosphere. I've made lifelong friends here and my rating has improved by over 400 points in one year!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">DK</div>
+            <div><strong>David Kim</strong><span class="testi-role">Adult Member — Intermediate</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The tournament preparation program is world-class. I've represented the academy at nationals three times now. Best training facility in the region!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AM</div>
+            <div><strong>Alex Morgan</strong><span class="testi-role">Competitive Player — Advanced</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ SHOP TEASER ░░░ -->
+  <section class="shop-teaser">
+    <div class="section-container">
+      <h2 class="section-title">Academy Shop</h2>
+      <p class="section-sub">Official merchandise and quality chess equipment for our members.</p>
+      <div class="shop-grid">
+        <div class="shop-card">
+          <div class="shop-thumb">♟</div>
+          <div class="shop-info">
+            <h3>Tournament Chess Set</h3>
+            <p>Professional-grade set used in our academy. Tournament approved.</p>
+            <div class="shop-footer"><span class="price">$49.99</span><a href="pages/shop.html" class="btn btn-primary btn-sm">View</a></div>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-thumb">👕</div>
+          <div class="shop-info">
+            <h3>Academy Team Shirt</h3>
+            <p>Official Gifted Chess Academy jersey. Represent our colors with pride!</p>
+            <div class="shop-footer"><span class="price">$29.99</span><a href="pages/shop.html" class="btn btn-primary btn-sm">View</a></div>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-thumb">📚</div>
+          <div class="shop-info">
+            <h3>Training Materials Bundle</h3>
+            <p>Curated collection of chess books and study guides for all levels.</p>
+            <div class="shop-footer"><span class="price">$39.99</span><a href="pages/shop.html" class="btn btn-primary btn-sm">View</a></div>
+          </div>
+        </div>
+        <div class="shop-card">
+          <div class="shop-thumb">🎒</div>
+          <div class="shop-info">
+            <h3>Chess Tournament Bag</h3>
+            <p>Carry your set in style with our branded tournament travel bag.</p>
+            <div class="shop-footer"><span class="price">$34.99</span><a href="pages/shop.html" class="btn btn-primary btn-sm">View</a></div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="pages/shop.html" class="btn btn-secondary btn-lg">Browse Full Shop →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░ CTA BANNER ░░░ -->
+  <section class="cta-banner">
+    <div class="cta-orb cta-orb-left"></div>
+    <div class="cta-orb cta-orb-right"></div>
+    <div class="section-container cta-inner">
+      <h2>Ready to Join Our Chess Family?</h2>
+      <p>Start your journey with Gifted Chess Academy today — first trial session is free!</p>
+      <a href="pages/contact.html" class="btn btn-primary btn-lg">Join the Academy</a>
+    </div>
+  </section>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">♛</span>
+        <span class="logo-text">GIFTED CHESS ACADEMY</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About Us</a>
+        <a href="pages/coaching.html">Programs</a>
+        <a href="pages/leaderboard.html">Leaderboard</a>
+        <a href="pages/events.html">Events</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/shop.html">Shop</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Gifted Chess Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Enquiry – Gifted Chess Academy</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+</head>
+<body class="contact-page">
+
+  <!-- ░░░ NAVBAR ░░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">♛</span>
+        <span class="logo-text">GIFTED<span class="logo-thin"> CHESS ACADEMY</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="coaching.html" class="nav-link">Programs</a></li>
+        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="coaching.html" class="nav-cta">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ░░░ PAGE HERO ░░░ -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="page-tag">✉ Get in Touch</span>
+      <h1>Contact & Enquiry</h1>
+      <p>Interested in joining Gifted Chess Academy? Fill in the form below or reach us directly via WhatsApp, Email, or Phone.</p>
+    </div>
+  </section>
+
+  <!-- ░░░ MAIN CONTENT ░░░ -->
+  <main class="page-content">
+    <div class="contact-page-layout">
+
+      <!-- ═══ LEFT: Enquiry Form ═══ -->
+      <div class="enquiry-form-col">
+
+        <div class="enquiry-form-card" id="enquiryFormCard">
+          <div class="efcard-header">
+            <h2>Send an Enquiry</h2>
+            <p>Tell us about yourself and what you're looking for — we'll help you find the perfect program.</p>
+          </div>
+
+          <form class="enquiry-form" id="enquiryForm" novalidate>
+
+            <!-- ── Enquiry type toggle ── -->
+            <div class="form-section-label">I am enquiring as…</div>
+            <div class="type-toggle" id="typeToggle">
+              <button type="button" class="type-btn active" data-type="individual">
+                <span class="type-icon">👤</span>
+                <span class="type-text">
+                  <strong>Individual</strong>
+                  <small>Personal coaching for myself</small>
+                </span>
+              </button>
+              <button type="button" class="type-btn" data-type="parent">
+                <span class="type-icon">👨‍👧</span>
+                <span class="type-text">
+                  <strong>Parent / Guardian</strong>
+                  <small>Coaching for my child</small>
+                </span>
+              </button>
+              <button type="button" class="type-btn" data-type="organisation">
+                <span class="type-icon">🏫</span>
+                <span class="type-text">
+                  <strong>Organisation</strong>
+                  <small>School, club or company</small>
+                </span>
+              </button>
+            </div>
+
+            <!-- ── Personal details ── -->
+            <div class="form-section-label">Your Details</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ef-fname">First Name <span class="req">*</span></label>
+                <input type="text" id="ef-fname" name="fname" placeholder="e.g. John" required />
+              </div>
+              <div class="form-group">
+                <label for="ef-lname">Last Name <span class="req">*</span></label>
+                <input type="text" id="ef-lname" name="lname" placeholder="e.g. Smith" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ef-email">Email Address <span class="req">*</span></label>
+                <input type="email" id="ef-email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="ef-phone">Phone / WhatsApp Number <span class="req">*</span></label>
+                <input type="tel" id="ef-phone" name="phone" placeholder="+1 234 567 8900" required />
+              </div>
+            </div>
+
+            <!-- ── Organisation fields (shown only when type = organisation) ── -->
+            <div class="org-fields" id="orgFields" style="display:none;">
+              <div class="form-section-label">Organisation Details</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ef-orgname">Organisation Name <span class="req">*</span></label>
+                  <input type="text" id="ef-orgname" name="orgname" placeholder="e.g. Riverside Primary School" />
+                </div>
+                <div class="form-group">
+                  <label for="ef-orgrole">Your Role</label>
+                  <input type="text" id="ef-orgrole" name="orgrole" placeholder="e.g. Head Teacher, Club Manager" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ef-students">Estimated Number of Students</label>
+                  <select id="ef-students" name="students">
+                    <option value="">— Select a range —</option>
+                    <option value="1-5">1 – 5</option>
+                    <option value="6-15">6 – 15</option>
+                    <option value="16-30">16 – 30</option>
+                    <option value="30+">30+</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="ef-location">Location / Address</label>
+                  <input type="text" id="ef-location" name="location" placeholder="City, Country" />
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Child fields (shown only when type = parent) ── -->
+            <div class="child-fields" id="childFields" style="display:none;">
+              <div class="form-section-label">About Your Child</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ef-childname">Child's First Name</label>
+                  <input type="text" id="ef-childname" name="childname" placeholder="e.g. Emma" />
+                </div>
+                <div class="form-group">
+                  <label for="ef-childage">Child's Age</label>
+                  <select id="ef-childage" name="childage">
+                    <option value="">— Select age group —</option>
+                    <option value="5-7">5 – 7 years</option>
+                    <option value="8-10">8 – 10 years</option>
+                    <option value="11-13">11 – 13 years</option>
+                    <option value="14-17">14 – 17 years</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Service interest ── -->
+            <div class="form-section-label">What Are You Interested In?</div>
+            <div class="service-checkboxes">
+              <label class="checkbox-card">
+                <input type="checkbox" name="service" value="1on1" />
+                <span class="cb-icon">♟</span>
+                <span class="cb-label">Private Coaching</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="service" value="group" />
+                <span class="cb-icon">👥</span>
+                <span class="cb-label">Group Programs</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="service" value="junior" />
+                <span class="cb-icon">👧</span>
+                <span class="cb-label">Junior Program</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="service" value="tournament" />
+                <span class="cb-icon">🏆</span>
+                <span class="cb-label">Competitive Team</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="service" value="school" />
+                <span class="cb-icon">🏫</span>
+                <span class="cb-label">School Programme</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" name="service" value="merch" />
+                <span class="cb-icon">🏪</span>
+                <span class="cb-label">Merchandise</span>
+              </label>
+            </div>
+
+            <!-- ── Experience level ── -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ef-level">Current Chess Level</label>
+                <select id="ef-level" name="level">
+                  <option value="">— Select level —</option>
+                  <option value="complete-beginner">Complete Beginner (never played)</option>
+                  <option value="beginner">Beginner (knows the rules)</option>
+                  <option value="intermediate">Intermediate (club player, ~800–1400)</option>
+                  <option value="advanced">Advanced (rated 1400–1800)</option>
+                  <option value="expert">Expert (rated 1800+)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="ef-format">Preferred Format</label>
+                <select id="ef-format" name="format">
+                  <option value="">— Select format —</option>
+                  <option value="online">Online (Zoom)</option>
+                  <option value="inperson">In-Person</option>
+                  <option value="either">Either works for me</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- ── Message ── -->
+            <div class="form-group">
+              <label for="ef-message">Tell Me More <span class="req">*</span></label>
+              <textarea id="ef-message" name="message" rows="5"
+                placeholder="Share your goals, any specific topics you want to cover, your availability, or any questions you have..." required></textarea>
+            </div>
+
+            <!-- ── How did you find us ── -->
+            <div class="form-group">
+              <label for="ef-source">How did you find me?</label>
+              <select id="ef-source" name="source">
+                <option value="">— Select an option —</option>
+                <option value="google">Google / Search</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="youtube">YouTube</option>
+                <option value="friend">Friend / Word of mouth</option>
+                <option value="school">Through a school</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- ── Send via channel picker ── -->
+            <div class="form-section-label">Send Enquiry Via</div>
+            <div class="send-channel-picker">
+              <button type="submit" class="send-channel-btn wa" id="efSubmitWA" data-channel="wa">
+                <span class="sch-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </span>
+                <span class="sch-text">
+                  <strong>WhatsApp</strong>
+                  <small>Opens WhatsApp chat</small>
+                </span>
+                <span class="btn-spinner" id="efSpinnerWA" style="display:none;">●●●</span>
+              </button>
+
+              <button type="submit" class="send-channel-btn gmail" id="efSubmitGmail" data-channel="gmail">
+                <span class="sch-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.642l8.073-6.149C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                </span>
+                <span class="sch-text">
+                  <strong>Gmail / Email</strong>
+                  <small>Opens your email app</small>
+                </span>
+                <span class="btn-spinner" id="efSpinnerGmail" style="display:none;">●●●</span>
+              </button>
+
+              <button type="submit" class="send-channel-btn sms" id="efSubmitSMS" data-channel="sms">
+                <span class="sch-icon">💬</span>
+                <span class="sch-text">
+                  <strong>SMS</strong>
+                  <small>Opens messages app</small>
+                </span>
+                <span class="btn-spinner" id="efSpinnerSMS" style="display:none;">●●●</span>
+              </button>
+            </div>
+
+          </form>
+
+          <!-- Success state -->
+          <div class="enquiry-success" id="enquirySuccess" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3>Enquiry Received!</h3>
+            <p>Thanks for getting in touch with Gifted Chess Academy. We'll review your details and reply to your email or phone within <strong>2–4 hours</strong> during working hours.</p>
+            <p style="margin-top:10px; font-size:0.88rem; color:var(--muted);">In the meantime, feel free to browse our <a href="coaching.html" style="color:var(--accent);">programs</a> or check out the <a href="gallery.html" style="color:var(--accent);">gallery</a>.</p>
+            <button class="btn btn-secondary" id="efReset" style="margin-top:24px;">Send Another Enquiry</button>
+          </div>
+
+        </div><!-- /enquiry-form-card -->
+      </div>
+
+      <!-- ═══ RIGHT: Contact info sidebar ═══ -->
+      <aside class="contact-sidebar">
+
+        <!-- Direct contact channels -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">Prefer to reach us directly?</h3>
+          <div class="sidebar-channels">
+            <a href="https://wa.me/10000000000?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20joining%20Gifted%20Chess%20Academy!"
+               target="_blank" rel="noopener" class="sidebar-channel wa">
+              <span class="sc-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </span>
+              <div class="sc-body">
+                <strong>WhatsApp</strong>
+                <span>+1 (000) 000-0000</span>
+              </div>
+            </a>
+            <a href="mailto:info@giftedchessacademy.com" class="sidebar-channel email">
+              <span class="sc-icon">✉</span>
+              <div class="sc-body">
+                <strong>Email</strong>
+                <span>info@giftedchessacademy.com</span>
+              </div>
+            </a>
+            <a href="sms:+10000000000" class="sidebar-channel sms">
+              <span class="sc-icon">💬</span>
+              <div class="sc-body">
+                <strong>SMS</strong>
+                <span>+1 (000) 000-0000</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Availability -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">Availability</h3>
+          <div class="avail-list">
+            <div class="avail-row"><span>Mon – Fri</span><span class="avail-val">9am – 7pm</span></div>
+            <div class="avail-row"><span>Saturday</span><span class="avail-val">9am – 3pm</span></div>
+            <div class="avail-row"><span>Sunday</span><span class="avail-val">By request</span></div>
+          </div>
+          <p class="avail-note">Response time: usually within <strong>2–4 hours</strong> during working hours.</p>
+        </div>
+
+        <!-- What happens next -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">What Happens Next?</h3>
+          <div class="next-steps">
+            <div class="next-step">
+              <span class="ns-num">1</span>
+              <div>
+                <strong>We receive your enquiry</strong>
+                <p>Your details come straight to our admissions team.</p>
+              </div>
+            </div>
+            <div class="next-step">
+              <span class="ns-num">2</span>
+              <div>
+                <strong>We'll reach out within 4 hours</strong>
+                <p>Via the phone number or email you provide.</p>
+              </div>
+            </div>
+            <div class="next-step">
+              <span class="ns-num">3</span>
+              <div>
+                <strong>Free trial session</strong>
+                <p>Experience our academy firsthand and meet our coaches.</p>
+              </div>
+            </div>
+            <div class="next-step">
+              <span class="ns-num">4</span>
+              <div>
+                <strong>Join the academy</strong>
+                <p>Enroll in your chosen program and start your chess journey!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">Follow Me</h3>
+          <div class="sidebar-social">
+            <a href="#" class="social-pill">📸 Instagram</a>
+            <a href="#" class="social-pill">📘 Facebook</a>
+            <a href="#" class="social-pill">▶ YouTube</a>
+            <a href="#" class="social-pill">♟ Chess.com</a>
+            <a href="#" class="social-pill">🎵 TikTok</a>
+          </div>
+        </div>
+
+      </aside>
+    </div><!-- /contact-page-layout -->
+  </main>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="logo-icon">♛</span><span class="logo-text">GIFTED CHESS ACADEMY</span></div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="coaching.html">Programs</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Gifted Chess Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

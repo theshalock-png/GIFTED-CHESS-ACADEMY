@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard – ChessMaster</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+</head>
+<body class="leaderboard-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">♛</span><span class="logo-text">ChessMaster</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="play.html" class="nav-link">Play</a></li>
+        <li><a href="learn.html" class="nav-link">Learn</a></li>
+        <li><a href="puzzles.html" class="nav-link">Puzzles</a></li>
+        <li><a href="leaderboard.html" class="nav-link active">Leaderboard</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="play.html" class="nav-cta">Play Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="page-tag">🏆 Rankings</span>
+      <h1>Global Leaderboard</h1>
+      <p>The world's best ChessMaster players — ranked, rated, and ready for a challenge.</p>
+    </div>
+  </section>
+
+  <!-- LEADERBOARD CONTENT -->
+  <main class="page-content">
+    <!-- Filters -->
+    <div class="lb-filters">
+      <button class="lb-filter-btn active">All Time</button>
+      <button class="lb-filter-btn">This Month</button>
+      <button class="lb-filter-btn">This Week</button>
+      <button class="lb-filter-btn">Blitz</button>
+      <button class="lb-filter-btn">Rapid</button>
+      <button class="lb-filter-btn">Classical</button>
+    </div>
+
+    <!-- Top 3 cards -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-bottom:40px;">
+      <div style="background:var(--surface-2); border:1px solid rgba(156,163,175,0.3); border-radius:var(--radius); padding:28px 20px; text-align:center;">
+        <div style="font-size:2.4rem; margin-bottom:8px;">🥈</div>
+        <div class="player-avatar" style="margin:0 auto 12px; width:52px; height:52px; font-size:1.1rem;">GK</div>
+        <div style="font-weight:700; margin-bottom:4px;">Garry K.</div>
+        <div class="rating-pill">2810</div>
+      </div>
+      <div style="background:var(--surface-2); border:1px solid rgba(251,191,36,0.4); border-radius:var(--radius); padding:28px 20px; text-align:center; transform:translateY(-12px);">
+        <div style="font-size:2.8rem; margin-bottom:8px;">🥇</div>
+        <div class="player-avatar" style="margin:0 auto 12px; width:60px; height:60px; font-size:1.2rem; background:linear-gradient(135deg,#f59e0b,#fbbf24);">MC</div>
+        <div style="font-weight:700; margin-bottom:4px; font-size:1.05rem;">Magnus C.</div>
+        <div class="rating-pill" style="background:rgba(251,191,36,0.2); color:var(--gold);">2840</div>
+      </div>
+      <div style="background:var(--surface-2); border:1px solid rgba(180,120,60,0.3); border-radius:var(--radius); padding:28px 20px; text-align:center;">
+        <div style="font-size:2.4rem; margin-bottom:8px;">🥉</div>
+        <div class="player-avatar" style="margin:0 auto 12px; width:52px; height:52px; font-size:1.1rem;">FN</div>
+        <div style="font-weight:700; margin-bottom:4px;">Fabiano N.</div>
+        <div class="rating-pill">2792</div>
+      </div>
+    </div>
+
+    <!-- Full table -->
+    <div class="lb-table-wrap">
+      <table class="lb-table">
+        <thead>
+          <tr>
+            <th style="width:60px;">#</th>
+            <th>Player</th>
+            <th>Rating</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Streak</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="rank-badge rank-1">1</span></td>
+            <td><div class="player-cell"><div class="player-avatar" style="width:32px;height:32px;font-size:0.75rem;">MC</div><span>Magnus C.</span></div></td>
+            <td><span class="rating-pill">2840</span></td>
+            <td><span class="wins-text">342</span></td>
+            <td><span class="losses-text">41</span></td>
+            <td><span class="streak-text">🔥 18</span></td>
+          </tr>
+          <tr>
+            <td><span class="rank-badge rank-2">2</span></td>
+            <td><div class="player-cell"><div class="player-avatar" style="width:32px;height:32px;font-size:0.75rem;">GK</div><span>Garry K.</span></div></td>
+            <td><span class="rating-pill">2810</span></td>
+            <td><span class="wins-text">298</span></td>
+            <td><span class="losses-text">55</span></td>
+            <td><span class="streak-text">🔥 7</span></td>
+          </tr>
+          <tr>
+            <td><span class="rank-badge rank-3">3</span></td>
+            <td><div class="player-cell"><div class="player-avatar" style="width:32px;height:32px;font-size:0.75rem;">FN</div><span>Fabiano N.</span></div></td>
+            <td><span class="rating-pill">2792</span></td>
+            <td><span class="wins-text">271</span></td>
+            <td><span class="losses-text">62</span></td>
+            <td><span class="streak-text">🔥 3</span></td>
+          </tr>
+          <tr>
+            <td><span class="rank-badge rank-other">4</span></td>
+            <td><div class="player-cell"><div class="player-avatar" style="width:32px;height:32px;font-size:0.75rem;">AB</div><span>Anish B.</span></div></td>
+            <td><span class="rating-pill">2764</span></td>
+            <td><span class="wins-text">245</span></td>
+            <td><span class="losses-text">78</span></td>
+            <td><span class="streak-text">🔥 1</span></td>
+          </tr>
+          <tr>
+            <td><span class="rank-badge rank-other">5</span></td>
+            <td><div class="player-cell"><div class="player-avatar" style="width:32px;height:32px;font-size:0.75rem;">HN</div><span>Hikaru N.</span></div></td>
+            <td><span class="rating-pill">2751</span></td>
+            <td><span class="wins-text">260</span></td>
+            <td><span class="losses-text">90</span></td>
+            <td>—</td>
+          </tr>
+          <tr class="highlight">
+            <td><span class="rank-badge rank-other">47</span></td>
+            <td><div class="player-cell"><div class="player-avatar" style="width:32px;height:32px;font-size:0.75rem;">ME</div><span>You ⬅</span></div></td>
+            <td><span class="rating-pill">1380</span></td>
+            <td><span class="wins-text">32</span></td>
+            <td><span class="losses-text">28</span></td>
+            <td><span class="streak-text">🔥 2</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="logo-icon">♛</span><span class="logo-text">ChessMaster</span></div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a><a href="play.html">Play</a>
+        <a href="learn.html">Learn</a><a href="puzzles.html">Puzzles</a>
+        <a href="leaderboard.html">Leaderboard</a><a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">© 2026 ChessMaster. Built with ♛ and a love for the game.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

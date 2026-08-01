@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – ChessMaster Coach</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+</head>
+<body class="shop-page">
+
+  <!-- ░░░ NAVBAR ░░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">♛</span>
+        <span class="logo-text">ChessMaster<span class="logo-thin"> Coach</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="coaching.html" class="nav-link">Coaching</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="shop.html" class="nav-link active">Shop</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="coaching.html" class="nav-cta">Book a Session</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ░░░ PAGE HERO ░░░ -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="page-tag">🏪 Official Merchandise</span>
+      <h1>Chess Gear &amp; Apparel</h1>
+      <p>Premium boards, piece sets, and branded clothing for players who take the game seriously.</p>
+    </div>
+  </section>
+
+  <!-- ░░░ SHOP CONTENT ░░░ -->
+  <main class="page-content">
+
+    <!-- How to order banner -->
+    <div class="order-how-banner">
+      <div class="order-how-inner">
+        <span class="order-how-icon">💬</span>
+        <div>
+          <strong>How to Order</strong>
+          <p>Browse the products below. Hit <em>Enquire</em> on anything you'd like — you can then reach me instantly via WhatsApp, Email, or SMS and I'll confirm stock, sizing, and payment within a few hours.</p>
+        </div>
+      </div>
+      <div class="contact-quick-btns">
+        <a href="https://wa.me/10000000000" target="_blank" rel="noopener" class="qbtn qbtn-wa">
+          <span class="qbtn-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>WhatsApp
+        </a>
+        <a href="mailto:coach@chessmaster.com" class="qbtn qbtn-email">
+          <span class="qbtn-icon">✉</span>Email
+        </a>
+        <a href="sms:+10000000000" class="qbtn qbtn-sms">
+          <span class="qbtn-icon">💬</span>SMS
+        </a>
+      </div>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="shop-filters">
+      <button class="shop-filter-btn active">All Products</button>
+      <button class="shop-filter-btn">Boards &amp; Sets</button>
+      <button class="shop-filter-btn">Apparel</button>
+      <button class="shop-filter-btn">Accessories</button>
+    </div>
+
+    <!-- Products grid -->
+    <div class="products-grid">
+
+      <!-- ── Boards & Sets ── -->
+      <div class="product-card" data-cat="boards"
+           data-name="Premium Wooden Chess Board"
+           data-price="$49.99"
+           data-desc="Solid rosewood &amp; maple, tournament size (20&quot;). Felt backing to protect your table.">
+        <div class="product-thumb">
+          <img src="../images/merch/board.jpg" alt="Premium Wooden Chess Board"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">♟</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Boards &amp; Sets</span>
+          <h3>Premium Wooden Chess Board</h3>
+          <p>Solid rosewood &amp; maple, tournament size (20"). Felt backing to protect your table.</p>
+          <div class="product-footer">
+            <span class="price">$49.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="boards"
+           data-name="Staunton Piece Set"
+           data-price="$34.99"
+           data-desc="Triple-weighted, felted base. Regulation king height (3.75&quot;). Includes storage bag.">
+        <div class="product-thumb">
+          <img src="../images/merch/piece-set.jpg" alt="Staunton Piece Set"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">♛</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Boards &amp; Sets</span>
+          <h3>Staunton Piece Set</h3>
+          <p>Triple-weighted, felted base. Regulation king height (3.75"). Includes storage bag.</p>
+          <div class="product-footer">
+            <span class="price">$34.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="boards"
+           data-name="Board + Pieces Combo"
+           data-price="$74.99"
+           data-desc="Full wooden board paired with the Staunton set. Best value for serious players.">
+        <div class="product-thumb">
+          <img src="../images/merch/combo.jpg" alt="Board + Pieces Combo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">♜</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Boards &amp; Sets</span>
+          <h3>Board + Pieces Combo</h3>
+          <p>Full wooden board paired with the Staunton set. Best value for serious players.</p>
+          <div class="product-footer">
+            <span class="price">$74.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="boards"
+           data-name="Digital Chess Clock"
+           data-price="$29.99"
+           data-desc="Multiple time control presets. Compact, easy-to-use, tournament approved.">
+        <div class="product-thumb">
+          <img src="../images/merch/clock.jpg" alt="Digital Chess Clock"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">⏱</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Boards &amp; Sets</span>
+          <h3>Digital Chess Clock</h3>
+          <p>Multiple time control presets. Compact, easy-to-use, tournament approved.</p>
+          <div class="product-footer">
+            <span class="price">$29.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Apparel ── -->
+      <div class="product-card" data-cat="apparel"
+           data-name="Branded T-Shirt"
+           data-price="$24.99"
+           data-desc="100% cotton, pre-shrunk. Chess piece print on chest. Sizes XS–3XL. Black or White. Please include your size and colour preference.">
+        <div class="product-thumb">
+          <img src="../images/merch/tshirt.jpg" alt="Branded T-Shirt"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">👕</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Apparel</span>
+          <h3>Branded T-Shirt</h3>
+          <p>100% cotton, pre-shrunk. Chess piece print on chest. Sizes XS–3XL. Black or White.</p>
+          <div class="product-footer">
+            <span class="price">$24.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="apparel"
+           data-name="Chess Hoodie"
+           data-price="$44.99"
+           data-desc="Heavyweight fleece, embroidered logo, kangaroo pocket. Sizes S–2XL. Please include your size preference.">
+        <div class="product-thumb">
+          <img src="../images/merch/hoodie.jpg" alt="Chess Hoodie"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">🧥</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Apparel</span>
+          <h3>Chess Hoodie</h3>
+          <p>Heavyweight fleece, embroidered logo, kangaroo pocket. Sizes S–2XL.</p>
+          <div class="product-footer">
+            <span class="price">$44.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="apparel"
+           data-name="Chess Cap"
+           data-price="$19.99"
+           data-desc="Structured snapback, embroidered ♛ logo. One size fits most.">
+        <div class="product-thumb">
+          <img src="../images/merch/cap.jpg" alt="Chess Cap"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">🧢</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Apparel</span>
+          <h3>Chess Cap</h3>
+          <p>Structured snapback, embroidered ♛ logo. One size fits most.</p>
+          <div class="product-footer">
+            <span class="price">$19.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Accessories ── -->
+      <div class="product-card" data-cat="accessories"
+           data-name="Chess Piece Bag"
+           data-price="$9.99"
+           data-desc="Drawstring velvet bag to store and protect your pieces between games.">
+        <div class="product-thumb">
+          <img src="../images/merch/bag.jpg" alt="Chess Piece Bag"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">🎒</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Accessories</span>
+          <h3>Chess Piece Bag</h3>
+          <p>Drawstring velvet bag to store and protect your pieces between games.</p>
+          <div class="product-footer">
+            <span class="price">$9.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="accessories"
+           data-name="Chess Notation Notebook"
+           data-price="$7.99"
+           data-desc="Pre-printed score sheets with board diagrams. 100 pages, A5 size.">
+        <div class="product-thumb">
+          <img src="../images/merch/notebook.jpg" alt="Chess Notation Notebook"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <span class="thumb-fallback">📓</span>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Accessories</span>
+          <h3>Chess Notation Notebook</h3>
+          <p>Pre-printed score sheets with board diagrams. 100 pages, A5 size.</p>
+          <div class="product-footer">
+            <span class="price">$7.99</span>
+            <button class="btn btn-primary btn-sm enquire-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /products-grid -->
+  </main>
+
+  <!-- ░░░ ENQUIRY MODAL ░░░ -->
+  <div class="modal-overlay" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-product-badge" id="modalBadge">♟</div>
+      <h2 class="modal-title" id="modalTitle">Enquire About</h2>
+      <p class="modal-product-name" id="modalProductName"></p>
+      <p class="modal-price" id="modalPrice"></p>
+      <p class="modal-desc" id="modalDesc"></p>
+      <p class="modal-cta-label">Choose how you'd like to reach me:</p>
+      <div class="modal-channels">
+        <a class="modal-channel-btn whatsapp-btn" id="modalWA" target="_blank" rel="noopener">
+          <span class="mch-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>
+          <span class="mch-text">
+            <strong>WhatsApp</strong>
+            <small>Chat instantly</small>
+          </span>
+        </a>
+        <a class="modal-channel-btn email-btn" id="modalEmail">
+          <span class="mch-icon">✉</span>
+          <span class="mch-text">
+            <strong>Email</strong>
+            <small>coach@chessmaster.com</small>
+          </span>
+        </a>
+        <a class="modal-channel-btn sms-btn" id="modalSMS">
+          <span class="mch-icon">💬</span>
+          <span class="mch-text">
+            <strong>SMS</strong>
+            <small>Text me directly</small>
+          </span>
+        </a>
+      </div>
+      <p class="modal-note">I'll confirm stock &amp; availability and send a payment link within a few hours.</p>
+    </div>
+  </div>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="logo-icon">♛</span><span class="logo-text">ChessMaster Coach</span></div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a><a href="coaching.html">Coaching</a>
+        <a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 ChessMaster Coach. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

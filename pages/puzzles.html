@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzles – ChessMaster</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/pages.css" />
+</head>
+<body class="puzzles-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-icon">♛</span><span class="logo-text">ChessMaster</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="play.html" class="nav-link">Play</a></li>
+        <li><a href="learn.html" class="nav-link">Learn</a></li>
+        <li><a href="puzzles.html" class="nav-link active">Puzzles</a></li>
+        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="play.html" class="nav-cta">Play Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <span class="page-tag">🧩 Daily Puzzles</span>
+      <h1>Sharpen Your Tactics</h1>
+      <p>A new puzzle every day — from simple one-movers to multi-move combinations that will blow your mind.</p>
+    </div>
+  </section>
+
+  <!-- PUZZLE CONTENT -->
+  <main class="page-content">
+    <div class="puzzle-layout">
+
+      <!-- Board side -->
+      <div class="puzzle-board-wrap">
+        <div class="puzzle-header">
+          <span class="puzzle-title">Puzzle #1042 — White to Move</span>
+          <div class="puzzle-difficulty">
+            <span class="diff-dot filled"></span>
+            <span class="diff-dot filled"></span>
+            <span class="diff-dot filled"></span>
+            <span class="diff-dot"></span>
+            <span class="diff-dot"></span>
+            <span style="font-size:0.78rem; color:var(--muted); margin-left:4px;">1680</span>
+          </div>
+        </div>
+        <span class="puzzle-turn">♔ White to move — find the winning combination</span>
+        <!-- Board -->
+        <div class="full-board" id="puzzleBoard"></div>
+
+        <!-- Hint -->
+        <div class="puzzle-hint-text" id="hintText">
+          💡 Hint: Look for a knight move that creates a fork, threatening both the king and queen simultaneously.
+        </div>
+
+        <!-- Actions -->
+        <div class="puzzle-actions">
+          <button class="btn btn-secondary" id="hintBtn">💡 Hint</button>
+          <button class="btn btn-secondary">⏩ Skip</button>
+          <button class="btn btn-primary">Next Puzzle →</button>
+        </div>
+      </div>
+
+      <!-- Info sidebar -->
+      <aside class="puzzle-sidebar">
+        <div class="panel-card">
+          <h4>Your Puzzle Rating</h4>
+          <div class="puzzle-rating-display">
+            <span class="rating-num">1742</span>
+            <div class="rating-sub">Puzzle ELO</div>
+            <span class="rating-change up">▲ +24 today</span>
+          </div>
+        </div>
+        <div class="panel-card" style="margin-top:16px;">
+          <h4>Today's Stats</h4>
+          <div class="stat-row"><span class="label">Solved</span><span class="value">7</span></div>
+          <div class="stat-row"><span class="label">Failed</span><span class="value" style="color:#f87171;">2</span></div>
+          <div class="stat-row"><span class="label">Streak</span><span class="value" style="color:var(--gold);">🔥 5 days</span></div>
+          <div class="stat-row"><span class="label">Best Time</span><span class="value">0:14</span></div>
+        </div>
+        <div class="panel-card" style="margin-top:16px;">
+          <h4>Puzzle Themes</h4>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; padding-top:4px;">
+            <span class="lesson-tag tag-intermediate">Fork</span>
+            <span class="lesson-tag tag-beginner">Back Rank</span>
+            <span class="lesson-tag tag-advanced">Skewer</span>
+            <span class="lesson-tag tag-intermediate">Pin</span>
+            <span class="lesson-tag tag-beginner">Mate in 1</span>
+            <span class="lesson-tag tag-advanced">Mate in 2</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand"><span class="logo-icon">♛</span><span class="logo-text">ChessMaster</span></div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a><a href="play.html">Play</a>
+        <a href="learn.html">Learn</a><a href="puzzles.html">Puzzles</a>
+        <a href="leaderboard.html">Leaderboard</a><a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">© 2026 ChessMaster. Built with ♛ and a love for the game.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
