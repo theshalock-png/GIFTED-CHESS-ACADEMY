@@ -77,7 +77,12 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   letter-spacing: -0.02em;
 }
-.nav-logo .logo-icon { font-size: 1.8rem; }
+.nav-logo img.nav-logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+}
 .nav-logo .logo-text {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
@@ -461,6 +466,7 @@ img { max-width: 100%; display: block; }
 .site-footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40px 24px; }
 .footer-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px; }
 .footer-brand { display: flex; align-items: center; gap: 10px; font-size: 1.3rem; font-weight: 700; }
+.footer-brand img.nav-logo-img { width: 36px; height: 36px; }
 .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; }
 .footer-nav a { font-size: 0.88rem; color: var(--muted); transition: color var(--transition); }
 .footer-nav a:hover { color: var(--text); }
